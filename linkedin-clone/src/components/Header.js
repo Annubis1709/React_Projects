@@ -1,20 +1,19 @@
 import './Header.css';
-import SearchIcon from '@mui/icons-material/Search';
+import linkedin from "../images/linkedin.png";
 import HeaderOption from './HeaderOption';
+import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import SupervisorAccountIcoin from '@mui/icons-material/SupervisorAccount';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
-import linkedin from "../images/linkedin.png"
 
 function Header() {
   return (
     <div className="header">
           <div className="header_left">
-          <img src={linkedin} alt="linkedin icon" />
-          
+          <img src={linkedin} alt="linkedin icon" />         
         
             <div className="header_search">
               <SearchIcon />
@@ -28,12 +27,10 @@ function Header() {
             <HeaderOption Icon={BusinessCenterIcon} title='Jobs' />
             <HeaderOption Icon={ChatIcon} title='Messaging' />
             <HeaderOption Icon={NotificationsIcon} title='Notifications' />
-            <HeaderOption avatar={require('../images/me.png')} title='me' />
-
-
+            <HeaderOption avatar={require('../images/me.png')} title='Me' />
           </div>
     </div>
   )
 }
 
-export default Header
+export default Header;

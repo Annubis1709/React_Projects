@@ -1,4 +1,4 @@
-import './HeaderOption.css'
+import './HeaderOption.css';
 import { Avatar } from '@mui/material';
 
 function HeaderOption({avatar, Icon, title}) {
@@ -8,7 +8,7 @@ function HeaderOption({avatar, Icon, title}) {
         {avatar && <Avatar className='headerOption_icon' src={avatar} />}
         <h3 className='headerOption_title'>{title}</h3>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderOption
+export default HeaderOption;
